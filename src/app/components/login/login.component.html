@@ -1,0 +1,33 @@
+<div class="submit-form">
+  <div *ngIf="!submitted">
+    <div class="form-group">
+      <label for="title">id</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        required
+        [(ngModel)]="login.title"
+        name="title"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="description">password</label>
+      <input
+        class="form-control"
+        id="description"
+        required
+        [(ngModel)]="login.description"
+        name="description"
+      />
+    </div>
+
+    <button (click)="savelogin()" class="btn btn-success">Submit</button>
+  </div>
+
+  <div *ngIf="submitted">
+    <h4>You submitted successfully!</h4>
+    <button class="btn btn-success" (click)="newlogin()">Add</button>
+  </div>
+</div>
