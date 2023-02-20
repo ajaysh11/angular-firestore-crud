@@ -9,7 +9,7 @@ import { TutorialService } from 'src/app/services/tutorial.service';
 })
 export class AddTutorialComponent implements OnInit {
 
-  tutorial: Tutorial = new Tutorial();
+  tutorial: Tutorial = new Tutorial(); 
   submitted = false;
 
   constructor(private tutorialService: TutorialService) { }
