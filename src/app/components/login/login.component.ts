@@ -11,7 +11,7 @@ export class AddTutorialComponent implements OnInit {
 
   tutorial: Tutorial = new Tutorial();  
   submitted = false; 
- 
+    
   constructor(private tutorialService: TutorialService) { }
 
   ngOnInit(): void {
