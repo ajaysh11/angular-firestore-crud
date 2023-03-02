@@ -4,13 +4,13 @@ import { TutorialService } from 'src/app/services/tutorial.service';
 
 @Component({
   selector: 'app-add-tutorial',
-  templateUrl: './add-tutorial.component.html', 
+  templateUrl: './add-tutorial.component.html',   
   styleUrls: ['./add-tutorial.component.css'] 
 })
 export class AddTutorialComponent implements OnInit {
 
   tutorial: Tutorial = new Tutorial();  
-  submitted = false; 
+  submitted = false;  
     
   constructor(private tutorialService: TutorialService) { }
 
