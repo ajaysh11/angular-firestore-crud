@@ -3,7 +3,7 @@ import { Tutorial } from 'src/app/models/tutorial.model';
 import { TutorialService } from 'src/app/services/tutorial.service';
 
 @Component({
-  selector: 'app-add-tutorial',  
+  selector: 'app-add-tutorial',    
   templateUrl: './add-tutorial.component.html',   
   styleUrls: ['./add-tutorial.component.css'] 
 })
